@@ -256,6 +256,7 @@ function* countdownGenerator(start) {
 const countdown = countdownGenerator(5);
 
 // Запускаємо генератор та отримуємо перше значення яку записуємо в змінну nextValue
+let nextValue = countdown.next();
 // Цикл while, що виводить значення з генератора, та працює поки не є генератор вичерпаним.
 // Якщо властивість done == false, генератор ще має значення для повернення.
 while (!nextValue.done) {
